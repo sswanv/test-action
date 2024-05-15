@@ -28,7 +28,7 @@ jobs:
           images: harbor.fuckout.work:8443/temp/test-action
           tags: |
             type=sha
-            type=ref,event=tag
+            type=semver,pattern={{version}}
           flavor: |
             latest=false
 
